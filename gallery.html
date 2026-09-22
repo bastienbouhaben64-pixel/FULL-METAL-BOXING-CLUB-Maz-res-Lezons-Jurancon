@@ -7,31 +7,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
   <link href="site.css" rel="stylesheet" />
 </head>
-<body>
+<body class="gallery-page">
+<a class="skip-link" href="#main">Aller au contenu</a>
 
 <!-- ── NAVIGATION ──────────────────────────────────────────── -->
-<nav>
-  <div class="nav-logo">FULL <span>METAL</span> BOXING <span>CLUB</span></div>
-  <ul class="nav-links">
-    <li><a href="index.html#accueil">Accueil</a></li>
-    <li><a href="index.html#about">Le Club</a></li>
-    <li><a href="gallery.html">Galerie</a></li>
-    <li><a href="index.html#horaires">Horaires</a></li>
-    <li><a href="index.html#contact" class="nav-cta">Nous Contacter</a></li>
-  </ul>
-  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </button>
+<nav aria-label="Navigation principale">
+  <a class="nav-logo" href="index.html" aria-label="Full Metal Boxing Club, accueil"><img loading="lazy" src="images/logo.png" alt=""><span>FULL METAL<small>BOXING CLUB</small></span></a>
+  <ul class="nav-links"><li><a href="index.html#about">Le club</a></li><li><a href="gallery.html">La galerie</a></li><li><a href="index.html#horaires">Les horaires</a></li><li><a href="index.html#contact" class="nav-cta">Rejoindre le club <span aria-hidden="true">↗</span></a></li></ul>
+  <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
 </nav>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html#accueil" onclick="closeMenu()">Accueil</a>
-  <a href="index.html#about" onclick="closeMenu()">Le Club</a>
-  <a href="gallery.html" onclick="closeMenu()">Galerie</a>
-  <a href="index.html#horaires" onclick="closeMenu()">Horaires</a>
-  <a href="index.html#contact" onclick="closeMenu()">Nous Contacter</a>
-</div>
-
+<div class="mobile-menu" id="mobileMenu"><a href="index.html#about">Le club</a><a href="gallery.html">La galerie</a><a href="index.html#horaires">Les horaires</a><a href="index.html#contact">Rejoindre le club ↗</a></div>
+<main id="main">
 <!-- ── EN-TÊTE GALERIE ─────────────────────────────────────── -->
 <header class="gallery-page-header">
   <div class="gallery-page-header-inner">
@@ -48,19 +34,19 @@
 
 <!-- ── FILTRES ─────────────────────────────────────────────── -->
 <div class="filter-tabs" id="filterTabs">
-  <button class="filter-btn active" data-filter="all">Tout</button>
-  <button class="filter-btn" data-filter="competition">Compétitions</button>
-  <button class="filter-btn" data-filter="video">Vidéos</button>
+  <button class="filter-btn active" aria-pressed="true" data-filter="all">Tout</button>
+  <button class="filter-btn" aria-pressed="false" data-filter="competition">Compétitions</button>
+  <button class="filter-btn" aria-pressed="false" data-filter="video">Vidéos</button>
 </div>
 
 <!-- ── GRILLE MÉDIA ────────────────────────────────────────────
      Chaque bloc ci-dessous est un EMPLACEMENT PRÊT À L'EMPLOI.
 
      ▸ Pour une PHOTO : supprimez le <div class="media-placeholder">…</div>
-       et mettez à la place : <img src="chemin/vers/photo.jpg" alt="...">
+       et mettez à la place : <img loading="lazy" src="chemin/vers/photo.jpg" alt="...">
 
      ▸ Pour une VIDÉO : supprimez le placeholder et mettez à la place :
-       <video src="chemin/vers/video.mp4" controls muted playsinline poster="chemin/vers/apercu.jpg"></video>
+       <video preload="none" src="chemin/vers/video.mp4" controls muted playsinline poster="chemin/vers/apercu.jpg"></video>
        (gardez le <div class="video-badge"> si vous voulez garder le pictogramme ▶)
 
      ▸ data-category détermine dans quel(s) filtre(s) l'élément apparaît :
@@ -74,13 +60,13 @@
 
   <!-- 1 -->
   <div class="media-item wide" data-category="competition">
-    <img src="images/12.jpeg" alt="Compétition régionale">
+    <img loading="lazy" src="images/12.jpeg" alt="Compétition régionale">
     <div class="media-caption"></div>
   </div>
 
   <!-- 2 -->
   <div class="media-item tall" data-category="entrainement">
-    <img src="images/11.jpeg" alt="Séance du soir">
+    <img loading="lazy" src="images/11.jpeg" alt="Séance du soir">
     <div class="media-caption"></div>
   </div>
 
@@ -92,14 +78,14 @@
     </div>
     
     <!-- ✅ On supprime le placeholder et on met la vidéo directement -->
-    <video src="videos/1.mp4" controls muted playsinline poster="images/poster1.png"></video>
+    <video preload="none" src="videos/1.mp4" controls muted playsinline poster="images/poster1.png"></video>
     
     <div class="media-caption"></div>
   </div>
 
     <!-- 4 -->
     <div class="media-item tall" data-category="enfants">
-       <img src="images/9.jpeg" alt="Séance du soir">
+       <img loading="lazy" src="images/9.jpeg" alt="Séance du soir">
 
      
       <div class="media-caption"></div>
@@ -107,13 +93,13 @@
 
     <!-- 5 -->
     <div class="media-item" data-category="enfants">
-       <img src="images/14.jpeg" alt="Séance du soir">
+       <img loading="lazy" src="images/14.jpeg" alt="Séance du soir">
       <div class="media-caption"></div>
     </div>
 
     <!-- 6 -->
     <div class="media-item" data-category="enfants">
-       <img src="images/15.jpeg" alt="Séance du soir">
+       <img loading="lazy" src="images/15.jpeg" alt="Séance du soir">
       <div class="media-caption"></div>
     </div>
 
@@ -122,13 +108,13 @@
       <div class="video-badge">
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </div>
-          <video src="videos/5.mp4" controls muted playsinline poster="images/poster4.png"></video>
+          <video preload="none" src="videos/5.mp4" controls muted playsinline poster="images/poster4.png"></video>
 
       <div class="media-caption"></div>
     </div>
     <!-- 8 -->
     <div class="media-item" data-category="enfants">
-       <img src="images/16.jpeg" alt="Séance du soir">
+       <img loading="lazy" src="images/16.jpeg" alt="Séance du soir">
       <div class="media-caption"></div>
     </div>
 
@@ -137,14 +123,14 @@
       <div class="video-badge">
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </div>
-          <video src="videos/3.mp4" controls muted playsinline poster="images/poster3.png"></video>
+          <video preload="none" src="videos/3.mp4" controls muted playsinline poster="images/poster3.png"></video>
 
       <div class="media-caption"></div>
     </div>
 
     <!-- 10 -->
     <div class="media-item" data-category="enfants">
-       <img src="images/13.jpeg" alt="Séance du soir">
+       <img loading="lazy" src="images/13.jpeg" alt="Séance du soir">
       <div class="media-caption"></div>
     </div>
 
@@ -154,7 +140,7 @@
       <div class="video-badge">
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </div>
-          <video src="videos/2.mp4" controls muted playsinline poster="images/poster2.png"></video>
+          <video preload="none" src="videos/2.mp4" controls muted playsinline poster="images/poster2.png"></video>
 
       <div class="media-caption"></div>
     </div>
@@ -164,7 +150,7 @@
       <div class="video-badge">
         <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
       </div>
-          <video src="videos/6.mp4" controls muted playsinline poster="images/poster5.png"></video>
+          <video preload="none" src="videos/6.mp4" controls muted playsinline poster="images/poster5.png"></video>
 
       <div class="media-caption"></div>
     </div>
@@ -172,50 +158,26 @@
 </section>
 
 <!-- ── FOOTER ──────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">FULL <span>METAL</span> BOXING <span>CLUB</span></div>
-    <div class="footer-copy">© 2025 Full Metal Boxing Club — Mazères-Lezons<br>Tous droits réservés</div>
-    <div class="footer-social">
-      <a href="#" class="social-link" aria-label="Facebook">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
-      <a href="#" class="social-link" aria-label="Instagram">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-    </div>
-  </div>
-</footer>
-
+</main>
+<footer><div class="footer-inner"><a class="footer-logo" href="index.html">FULL METAL <span>BOXING CLUB.</span></a><p>Mazères-Lezons & Jurançon<br>La force du collectif. Le goût de l’effort.</p><a href="index.html#contact">On se retrouve à la salle ↗</a></div></footer>
+<script src="site.js"></script>
 <script>
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-  }
-  function closeMenu() {
-    document.getElementById('mobileMenu').classList.remove('open');
-  }
-  document.addEventListener('click', function(e) {
-    const menu = document.getElementById('mobileMenu');
-    const ham = document.querySelector('.hamburger');
-    if (menu.classList.contains('open') && !menu.contains(e.target) && !ham.contains(e.target)) {
-      menu.classList.remove('open');
-    }
-  });
-
   // ── Filtres de la galerie ──────────────────────────────
   const filterButtons = document.querySelectorAll('.filter-btn');
   const mediaItems = document.querySelectorAll('.media-item');
 
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
+      filterButtons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+      btn.setAttribute('aria-pressed', 'true');
       btn.classList.add('active');
       const filter = btn.dataset.filter;
 
       mediaItems.forEach(item => {
         const cats = item.dataset.category.split(' ');
         const show = filter === 'all' || cats.includes(filter);
-        item.style.display = show ? '' : 'none';
+        item.hidden = !show;
+        if (!show) item.querySelectorAll('video').forEach(video => video.pause());
       });
     });
   });

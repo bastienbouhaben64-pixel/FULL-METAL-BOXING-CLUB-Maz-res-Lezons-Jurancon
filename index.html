@@ -3,346 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Full Metal Boxing Club</title>
+  <title>Full Metal Boxing Club — Mazères-Lezons & Jurançon</title>
+  <meta name="description" content="Full contact, kick boxing et esprit d’équipe à Mazères-Lezons et Jurançon. Découvrez le club, les horaires et profitez de deux séances d’essai gratuites.">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet" />
  <link href="site.css" rel="stylesheet" />
 
 </head>
 <body>
-
-<!-- ── NAVIGATION ──────────────────────────────────────────── -->
-<nav>
-  <div class="nav-logo">FULL <span>METAL</span> BOXING <span>CLUB</span></div>
-  <ul class="nav-links">
-    <li><a href="#accueil">Accueil</a></li>
-    <li><a href="#about">Le Club</a></li>
-    <li><a href="#galerie">Galerie</a></li>
-    <li><a href="#horaires">Horaires</a></li>
-    <li><a href="#contact" class="nav-cta">Nous Contacter</a></li>
-  </ul>
-  <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </button>
+<a class="skip-link" href="#main">Aller au contenu</a>
+<nav aria-label="Navigation principale">
+  <a class="nav-logo" href="index.html" aria-label="Full Metal Boxing Club, accueil"><img src="images/logo.png" alt=""><span>FULL METAL<small>BOXING CLUB</small></span></a>
+  <ul class="nav-links"><li><a href="index.html#about">Le club</a></li><li><a href="gallery.html">La galerie</a></li><li><a href="index.html#horaires">Les horaires</a></li><li><a href="index.html#contact" class="nav-cta">Rejoindre le club <span aria-hidden="true">↗</span></a></li></ul>
+  <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
 </nav>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#accueil" onclick="closeMenu()">Accueil</a>
-  <a href="#about" onclick="closeMenu()">Le Club</a>
-  <a href="#galerie" onclick="closeMenu()">Galerie</a>
-  <a href="#horaires" onclick="closeMenu()">Horaires</a>
-  <a href="#contact" onclick="closeMenu()">Nous Contacter</a>
-</div>
-
-<!-- ── HERO ────────────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu"><a href="index.html#about">Le club</a><a href="gallery.html">La galerie</a><a href="index.html#horaires">Les horaires</a><a href="index.html#contact">Rejoindre le club ↗</a></div>
+<main id="main">
 <section id="accueil">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-eyebrow">Club de Full Contact — Mazères-Lezons</div>
-      <h1 class="hero-title">
-        FULL<br>
-        <span class="line-red">METAL</span><br>
-        <span class="line-outline">BOXING</span><br>
-              <h1 class="hero-title">CLUB
-      </h1>
-      <p class="hero-sub">Discipline, combativité et dépassement de soi. Rejoignez le club référence du Full Contact dans notre région.</p>
-      <div class="hero-actions">
-        <a href="#horaires" class="btn-primary">Voir les Horaires</a>
-        <a href="#contact" class="btn-secondary">Nous Rejoindre</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-num">12<span>+</span></div>
-          <div class="stat-label">Années d'existence</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">80<span>+</span></div>
-          <div class="stat-label">Membres actifs</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-num">3<span>×</span></div>
-          <div class="stat-label">Champion régional</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Fighter silhouette illustration -->
-    <div class="hero-fighter">
-    </div>
+ <div class="hero-inner">
+  <div class="hero-text"><p class="hero-eyebrow"><span></span> Mazères-Lezons · Jurançon</p>
+   <h1>DU CARACTÈRE.<br>DU COLLECTIF.<br><em>DU BOXING.</em></h1>
+   <p class="hero-sub">Plus qu’un sport, un état d’esprit. Du premier entraînement au prochain combat, trouvez votre place au Full Metal Boxing Club.</p>
+   <div class="hero-actions"><a class="btn-primary" href="#contact">Enfiler les gants <span aria-hidden="true">↗</span></a><a class="text-link" href="#horaires">Voir les horaires <span aria-hidden="true">↓</span></a></div>
+   <p class="trial-note"><span aria-hidden="true">✓</span> 2 séances d’essai gratuites · Sans engagement</p>
   </div>
+  <div class="hero-visual"><img class="hero-photo" src="images/1.jpeg" alt="L’équipe du Full Metal Boxing Club réunie en compétition" fetchpriority="high"><div class="photo-topline"><span>FULL METAL / L’ESPRIT CLUB</span><span>64 — BÉARN</span></div><div class="photo-caption"><span>SE DÉPASSER. ENSEMBLE.</span><small>Une équipe. La même passion.</small></div><div class="photo-index" aria-hidden="true">FMBC / 01</div></div>
+ </div>
+ <div class="hero-bottom"><span>FULL CONTACT & KICK BOXING</span><span>DÉBUTANTS & COMPÉTITEURS</span><a href="#about">DÉCOUVRIR LE CLUB ↓</a></div>
 </section>
-
-<!-- ── ABOUT ───────────────────────────────────────────────── -->
-<section id="about">
-  <div class="about-inner">
-    <div class="about-visual">
-      <div class="about-card">
-        <!-- Coach illustration -->
-        <img src="images/logo.png">
-        <div class="about-badge">
-          <strong>20</strong>ans<br>d'exp.
-        </div>
-      </div>
-    </div>
-
-    <div class="about-text">
-      <div class="section-label">Le Club</div>
-      <h2 class="section-title">FORGÉ DANS<br>L'EFFORT</h2>
-      <div class="section-divider"></div>
-      <p>Le Full Metal Boxing Club est bien plus qu'une salle d'entraînement. C'est un espace où chacun — débutant ou compétiteur aguerri — vient se surpasser, apprendre le respect et cultiver la discipline qui fait les vrais champions.</p>
-      <p>Fondé sur des valeurs de rigueur et de solidarité, notre club accueille enfants, adolescents et adultes dans une ambiance exigeante mais bienveillante.</p>
-
-      <div class="coach-name">Bruno</div>
-      <div class="coach-title">Coach Principal & Fondateur</div>
-
-      <div class="tags">
-        <span class="tag red">Full Contact</span>
-        <span class="tag">Kick Boxing</span>
-        <span class="tag">Self Defense</span>
-        <span class="tag">Enfants dès 7 ans</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── GALLERY ─────────────────────────────────────────────── -->
-<section id="galerie">
-  <div class="gallery-header">
-    <div class="section-label">Galerie</div>
-    <h2 class="section-title">LA VIE DU CLUB</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="gallery-grid">
-    <!-- Image 1: Large – ring action -->
-    <div class="gallery-item">
-        <img src="images/1.jpeg">
-      <div class="gallery-caption"></div>
-    </div>
-
-    <!-- Image 2: Training -->
-    <div class="gallery-item">
-        <img src="images/6.jpeg">
-      <div class="gallery-caption"></div>
-    </div>
-
-    <!-- Image 3: Kids training -->
-    <div class="gallery-item">
-      <img src="images/3.jpeg">
-      <div class="gallery-caption"></div>
-    </div>
-
-    <!-- Image 4: Trophy / competition -->
-    <div class="gallery-item">
-        <img src="images/7.jpeg">
-      <div class="gallery-caption"></div>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top:2.5rem;">
-    <a href="gallery.html" class="btn-secondary" style="color:var(--black); border-color:rgba(0,0,0,0.2);">Voir toute la galerie</a>
-  </div>
-</section>
-
-<!-- ── SCHEDULE ────────────────────────────────────────────── -->
-<section id="horaires">
-  <div class="schedule-header">
-    <div class="section-label" style="color:var(--red)">Emploi du temps</div>
-    <h2 class="section-title" style="color:white">HORAIRES<br>DU CLUB</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="schedule-grid">
-
-
-<table>
-    <thead>
-        <tr>
-            <th>Horaires</th>
-            <th>Lundi</th>
-            <th>Mardi</th>
-            <th>Mercredi</th>
-            <th>Jeudi</th>
-            <th>Vendredi</th>
-            <th>Samedi</th>
-            <th>Dimanche</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>17:00 - 17:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>17:30 - 18:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>18:00 - 18:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>18:30 - 19:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>19:00 - 19:30</td>
-            <td></td>
-            <td class="entrainement-Mazeres" rowspan="3">Salle de Mazères</td>
-            <td></td>
-             <td class="entrainement-Jurancon" rowspan="3">Salle de Jurançon</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>19:30 - 20:00</td>
-            <td></td>
-            <td></td>
-           
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>20:00 - 20:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>20:30 - 21:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>21:00 - 21:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>21:30 - 22:00</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+<div class="values-strip" aria-label="Les valeurs du club"><span>RESPECT</span><i aria-hidden="true">✳</i><span>DISCIPLINE</span><i aria-hidden="true">✳</i><span>DÉPASSEMENT</span><i aria-hidden="true">✳</i><span>ESPRIT D’ÉQUIPE</span></div>
+<section id="about" class="section-light"><div class="about-inner">
+ <div class="about-visual"><div class="image-frame"><img src="images/3.jpeg" alt="Les membres du club réunis sur les tapis" loading="lazy"></div><div class="image-stamp">UN CLUB.<br><span>UNE FAMILLE.</span></div></div>
+ <div class="about-text"><p class="section-label">01 / LE CLUB</p><h2 class="section-title">FORGÉ DANS L’EFFORT.<br><span>PORTÉ PAR LE COLLECTIF.</span></h2><p>Le Full Metal Boxing Club est bien plus qu’une salle d’entraînement. C’est un espace où chacun, débutant ou compétiteur aguerri, vient se surpasser, apprendre le respect et cultiver la discipline.</p><p>Enfants, adolescents et adultes : on avance ensemble, dans une ambiance exigeante et bienveillante.</p><div class="coach"><span class="coach-initial" aria-hidden="true">B.</span><div><strong>Bruno</strong><small>Coach principal & fondateur</small></div></div><div class="tags"><span>Full contact</span><span>Kick boxing</span><span>Self défense</span><span>Dès 7 ans</span></div></div>
+</div></section>
+<section id="galerie" class="section-light"><div class="section-heading"><div><p class="section-label">02 / DANS NOTRE COIN DU RING</p><h2 class="section-title">LA VIE DU CLUB.</h2></div><a href="gallery.html" class="text-link dark-link">Toute la galerie ↗</a></div>
+<div class="gallery-grid">
+  <a class="gallery-item" href="gallery.html"><img src="images/1.jpeg" alt="L’équipe du club réunie en compétition" loading="lazy"><div class="gallery-caption"><small>01 / LE COLLECTIF</small><span>La vie du club ↗</span></div></a>
+  <a class="gallery-item" href="gallery.html"><img src="images/6.jpeg" alt="Souvenir de compétition du club" loading="lazy"></a>
+  <a class="gallery-item" href="gallery.html"><img src="images/3.jpeg" alt="Les membres du club sur les tapis" loading="lazy"></a>
+  <a class="gallery-item" href="gallery.html"><img src="images/7.jpeg" alt="Les boxeurs du Full Metal Boxing Club" loading="lazy"></a>
 </div>
-
-
 </section>
-
-<!-- ── CONTACT ─────────────────────────────────────────────── -->
-<section id="contact">
-  <div class="contact-inner">
-    <div class="contact-text">
-      <div class="section-label">Contact</div>
-      <h2 class="section-title">VENEZ NOUS<br>REJOINDRE</h2>
-      <div class="section-divider"></div>
-      <p>Vous souhaitez intégrer le club, poser une question sur les cours ou simplement essayer une séance ? Contactez-nous directement, Bruno vous répondra personnellement.</p>
-      <p>Les deux premiers cours d'essais sont <strong>gratuits et sans engagement</strong>, ouvert à tous les âges et tous les niveaux.</p>
-      <p style="margin-top:2rem; font-size:0.9rem; color:#888;">
-        📍 Adresse du club — Mazères-Lezons <br>
-      </p>
-    </div>
-
-    <div class="contact-card">
-      <div class="contact-label">Téléphone</div>
-      <!-- Desktop: show number -->
-      <div class="desktop-only">
-        <div class="phone-display">+33 6 63 83 19 83</div>
-        <div class="contact-label" style="margin-top:0.5rem; font-size:0.7rem; color:#666;">Composez ce numéro pour nous joindre</div>
-      </div>
-      <!-- Mobile: tap to call button -->
-      <a href="tel:+33663831983" class="btn-call mobile-only">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.3a16 16 0 0 0 6 6l.91-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
-        Appeler Bruno
-      </a>
-
-      <div style="margin-top:1.5rem">
-        <div class="contact-label">Email</div>
-        <a href="mailto:laurent.rfm@hotmail.fr" class="contact-value">laurent.rfm@hotmail.fr</a>
-      </div>
-
-      <div>
-        <div class="contact-label">Réseaux sociaux</div>
-        <a href="#" class="contact-value" style="color: #4267B2;">Facebook — Full Metal BC</a>
-        <a href="#" class="contact-value" style="color: #C13584;">Instagram — @fullmetalbc</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ──────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-logo">FULL <span>METAL</span> BOXING <span>CLUB</span></div>
-    <div class="footer-copy">© 2025 Full Metal Boxing Club — Mazères-Lezons<br>Tous droits réservés</div>
-    <div class="footer-social">
-      <a href="#" class="social-link" aria-label="Facebook">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
-      <a href="#" class="social-link" aria-label="Instagram">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-  }
-  function closeMenu() {
-    document.getElementById('mobileMenu').classList.remove('open');
-  }
-  // Close menu on outside click
-  document.addEventListener('click', function(e) {
-    const menu = document.getElementById('mobileMenu');
-    const ham = document.querySelector('.hamburger');
-    if (menu.classList.contains('open') && !menu.contains(e.target) && !ham.contains(e.target)) {
-      menu.classList.remove('open');
-    }
-  });
-</script>
+<section id="horaires"><div class="section-heading"><div><p class="section-label">03 / RENDEZ-VOUS À LA SALLE</p><h2 class="section-title">ON S’ENTRAÎNE<br><span>QUAND ?</span></h2></div><p class="section-intro">Deux rendez-vous par semaine.<br>La même envie de progresser.</p></div><div class="schedule-grid">
+<article class="day-card"><div class="day-top"><span>01 / MARDI</span><span aria-hidden="true">↗</span></div><h3>19:00 <span>—</span> 20:30</h3><p>Salle de Mazères</p><small>Mazères-Lezons</small></article>
+<article class="day-card"><div class="day-top"><span>02 / JEUDI</span><span aria-hidden="true">↗</span></div><h3>19:00 <span>—</span> 20:30</h3><p>Salle de Jurançon</p><small>Jurançon</small></article></div><p class="schedule-note">Votre première séance ? <a href="#contact">Contactez Bruno pour préparer votre venue ↗</a></p></section>
+<section id="contact" class="section-light"><div class="contact-inner"><div class="contact-text"><p class="section-label">04 / À VOUS DE JOUER</p><h2 class="section-title">LE PREMIER PAS.<br><span>C’EST VOUS.</span></h2><p>Envie d’essayer, de progresser ou simplement d’en savoir plus ? Bruno vous répond directement.</p><div class="trial-box"><strong>2 séances offertes</strong><span>Pour découvrir le club, sans engagement.</span></div></div><div class="contact-card"><span class="section-label">PARLONS BOXE.</span><p>Une question ? Un premier entraînement ?</p><a class="phone-display" href="tel:+33663831983">06 63 83 19 83 <span aria-hidden="true">↗</span></a><a class="contact-value" href="mailto:laurent.rfm@hotmail.fr">laurent.rfm@hotmail.fr ↗</a><div class="contact-location">MAZÈRES-LEZONS & JURANÇON<br><span>Pyrénées-Atlantiques · 64</span></div></div></div></section>
+</main>
+<footer><div class="footer-inner"><a class="footer-logo" href="index.html">FULL METAL <span>BOXING CLUB.</span></a><p>Mazères-Lezons & Jurançon<br>La force du collectif. Le goût de l’effort.</p><a href="index.html#contact">On se retrouve à la salle ↗</a></div></footer>
+<script src="site.js"></script>
 </body>
 </html>
